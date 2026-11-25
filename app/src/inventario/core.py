@@ -24,7 +24,7 @@ class Inventario:
             raise ValueError("La cantidad debe ser mayor que cero")
         if cantidad > self._productos[nombre]["cantidad"]:
             raise ValueError("Stock insuficiente")
-        self._productos[nombre]["cantidad"] -= cantidad
+        self._productos[nombre]["cantidad"] += cantidad  # ERROR a propósito
 
     def cantidad(self, nombre):
         """Unidades disponibles de un producto (0 si no existe)."""
