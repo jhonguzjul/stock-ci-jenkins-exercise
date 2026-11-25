@@ -1,0 +1,19 @@
+# Configuration as Code (JCasC): Jenkins arranca ya configurado, sin asistente de instalación.
+jenkins:
+  systemMessage: "Integración Continua · Unidad 2 / Escenario 4 — Jenkins + Docker configurado como código (JCasC)"
+  numExecutors: 2
+  mode: NORMAL
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "estudiante"
+          name: "Estudiante"
+          password: "${JENKINS_ADMIN_PASSWORD}"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+
+unclassified:
+  location:
+    url: "http://localhost:8080/"

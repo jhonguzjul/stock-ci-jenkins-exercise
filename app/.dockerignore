@@ -1,0 +1,6 @@
+.venv
+reports
+tests
+.pytest_cache
+**/__pycache__
+Jenkinsfile

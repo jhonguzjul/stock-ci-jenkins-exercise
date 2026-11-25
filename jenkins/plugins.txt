@@ -1,0 +1,8 @@
+configuration-as-code
+workflow-aggregator
+git
+docker-workflow
+junit
+pipeline-graph-view
+pipeline-stage-view
+timestamper
