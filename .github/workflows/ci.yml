@@ -1,4 +1,3 @@
-# Mismo flujo que app/Jenkinsfile, ejecutado por GitHub Actions.
 name: CI
 
 on:

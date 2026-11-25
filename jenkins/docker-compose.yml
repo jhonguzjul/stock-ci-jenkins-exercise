@@ -1,6 +1,9 @@
 services:
   jenkins:
-    build: .
+    build:
+      context: .
+      # Usa la red del host al construir (evita fallos de DNS del builder al descargar plugins).
+      network: host
     image: jenkins-clase:lts
     container_name: jenkins-clase
     restart: unless-stopped
